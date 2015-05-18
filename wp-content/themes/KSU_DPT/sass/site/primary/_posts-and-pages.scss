@@ -1,0 +1,227 @@
+.heading {
+	font-family: $heading-block-font;
+	font-size: 1.8rem;
+	color: #000000;
+	/*background-color: #febc11;
+	-moz-box-shadow: 3px 3px 0px 0px #E3AB20;
+	-webkit-box-shadow: 3px 3px 0px 0px #E3AB20;
+	box-shadow: 3px 3px 0px 0px #E3AB20;
+	padding: 5px 15px;
+	margin: 15px 0px 15px 0px;*/
+	display: inline-block;
+}
+.heading:after {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 3px;
+	margin-bottom: 1.5em;
+}
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 1em 0 0;
+	padding-bottom: 2em;
+	border-bottom: 1px solid $gainsboro;
+}
+
+.has-featured-image .hentry {
+	margin-top: 2em;
+}
+
+.has-featured-image .hentry:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+article {
+	// Fix issue with non-clearing floats within articles with floated content like images
+	@include clearfix();
+}
+
+.home article {
+	// No bottom border on static home page
+	border-bottom: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+// Adjustments for aiming for 75 characters per line for maximum readability
+.page #primary,
+.single #primary {
+	@media only screen and (min-width: 53.125em) {
+		/*max-width: 90%;*/
+		margin: 0 auto;
+	}
+	@media only screen and (min-width: 56.25em) {
+		/*max-width: 85%;*/
+		p {
+			font-size: 22px;
+			line-height: 1.7;
+		}
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+#content {
+	margin-top: 2em;
+	/*padding-bottom: 6em;*/
+	background: $white;
+}
+
+.has-featured-image #content {
+	/*margin-top: 10em;*/
+	@media #{$medium} {
+		margin-top: 14em;
+	}
+	@media #{$large} {
+		margin-top: 25em;
+	}
+	@media only screen and (min-width: 78.75em) {
+		margin-top: 30em;
+	}
+}
+
+#page {
+	overflow: hidden;
+}
+
+.category-list,
+.entry-meta,
+.entry-footer,
+.taxonomy-description p {
+	font-size: rem-calc(16);
+	font-family: $header-font;
+	font-weight: bold;
+}
+
+.entry-meta {
+	margin-top: 0.5em;
+}
+
+.entry-header {
+	position: relative;
+}
+
+.entry-footer {
+	margin-top: 2em;
+	line-height: 2.5;
+}
+
+.category-list ul,
+.tag-list ul {
+	font-weight: normal;
+	font-family: $header-font;
+}
+
+.vcard {
+	display: inline;
+	border: none;
+	padding: 0;
+	margin: 0;
+	.fn {
+		font-weight: inherit;
+		font-size: rem-calc(16);
+	}
+}
+
+.sticky-post {
+	position: absolute;
+	top: 1em;
+	right: 3em;
+}
+
+// Featured image header in single post view
+.featured-image {
+	position: fixed;
+	min-height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	background: $white;
+}
+
+// Gradient overlay on top of featured image header in single post view
+.gradient-overlay {
+	position: relative;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+	img {
+		position: relative;
+		z-index: -10;
+		width: 100%;
+	}
+}
+
+.has-featured-image article:nth-of-type(1) .entry-header {
+	position: absolute;
+	top: -140px;
+	color: $white;
+	@media only screen and (min-width: 35em) {
+		top: -120px;
+	}
+	@media #{$medium} {
+		max-width: 85%;
+		top: -140px;
+	}
+	@media #{$large} {
+		max-width: 70%;
+		top: -100px;
+	}
+	@media #{$xlarge-up} {
+		max-width: 85%;
+		top: -100px;
+	}
+	.entry-meta a,
+	.category-list a{
+		color: $white;
+	}
+}
+
+.has-featured-image article:nth-of-type(1) .entry-title {
+	font-size: rem-calc(20);
+	color: $white;
+	@media #{$medium} {
+		font-size: rem-calc(30);
+	}
+	@media #{$large-up} {
+		background-color: rgba(0,0,0,0.5);
+		padding: 16px;
+		font-size: rem-calc(46)
+	}
+}
+
+.has-featured-image article:nth-of-type(1) .entry-content {
+	@media #{$medium} {
+		padding-top: 2em;
+	}
+}
+
+.index-post-listing {
+	@include grid-row();
+	margin-top: 2em;
+}
+
+.index-thumbnail-image {
+	padding-top: 0.8em;
+}

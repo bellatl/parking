@@ -1,0 +1,12 @@
+/* Hide submit button everywhere */
+.error404 .search-submit,
+.search .search-submit,
+.search-box .search-submit {
+	display: none;
+}
+
+// For comment submission and contact form buttons
+#submit, #send {
+	@include button($radius: true);
+}
+

@@ -1,0 +1,53 @@
+$font__main: sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+$top-nav-title-font: "Open Sans", Arial, sans-serif;
+$top-nav-link-font: "bebas_neue_regularregular", Arial, sans-serif;
+$body-font: "PT Serif", serif;
+$header-font: "bebas_neue_regularregular", Arial, sans-serif;
+$heading-block-font: "PT Serif", serif;
+$ul-li-font: "PT Serif", serif;
+$widget-title: "PT Serif", serif;
+$footer-font: "Open Sans", Arial, sans-serif;
+$form-font: "Open Sans", Arial, sans-serif;
+$aside-font: "PT Serif", serif;
+$button-font: "Open Sans", Arial, sans-serif;
+
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('/wp-content/themes/KSU_DPT/fonts/bebasneue_regular-webfont.eot');
+    src: url('/wp-content/themes/KSU_DPT/fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_regular-webfont.woff') format('woff'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_regular-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('/wp-content/themes/KSU_DPT/fonts/bebasneue_book-webfont.eot');
+    src: url('/wp-content/themes/KSU_DPT/fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_book-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_book-webfont.woff') format('woff'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_book-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('/wp-content/themes/KSU_DPT/fonts/bebasneue_light-webfont.eot');
+    src: url('/wp-content/themes/KSU_DPT/fonts/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_light-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_light-webfont.woff') format('woff'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_light-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/KSU_DPT/fonts/bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

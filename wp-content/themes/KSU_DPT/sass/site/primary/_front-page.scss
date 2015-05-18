@@ -1,0 +1,128 @@
+/* Styles specific to the front page background */
+#masthead {
+position: relative;
+height: 190px;
+display: table;
+width: 100%;
+margin-bottom: -78px;
+background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.66)),to(rgba(0,0,0,0)));
+background:-webkit-linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.66),rgba(0,0,0,0));
+background:-moz-linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,0));
+background:linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,0));
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8050a1d', endColorstr='##00050a1d', GradientType=0)}
+
+.background {
+	background-color: #E6E7E8;
+	margin: 0 auto;
+	@media #{$small} {
+		width: 100%;
+	}
+	@media #{$medium-up} {
+		width: 85%;
+	}
+}
+
+@media(min-width:1600px) {
+	.background .full-screen-image {
+		height:auto;
+		width:100%;
+	}
+}
+
+/* Styles specific to the front page template */
+
+.orbit-container {
+	margin-top: -45px;
+}
+
+.read-more {
+	color: #febc11;
+}
+.read-more:visited {
+	color: #febc11;
+}
+
+/*.home {
+	background-image: linear-gradient(rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.3)),
+		url(/media/bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}*/
+
+.home #content {
+	background: transparent;
+	/*margin-top: 10em;*/
+	@media #{$medium-up} {
+		/*margin-top: 20em;*/
+	}
+}
+
+.home .blacksection {
+	background-color: $oil;
+}
+
+#section {
+	padding: 30px;
+}
+#section-colored {
+	background-color: #e1e1e1;
+	padding: 40px 0;
+}
+.bob {
+	background-image: url("/wp-content/themes/KSU_DPT/images/bob_button.png");
+}
+.valign-middle {
+    /*display: table;*/
+
+    > .columns {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    > .columns, > [class*="column"] + [class*="column"]:last-child {
+        float: none;
+    }
+}
+
+.tagline {
+	text-align: center;
+	h1 {
+		color: $white;
+		text-transform: lowercase;
+		font-size: rem-calc(40);
+		font-weight: 700;
+		letter-spacing: -0.05em;
+		line-height: 1.2;
+		@media #{$small} {
+			font-size: rem-calc(45);
+		}
+		@media #{$medium} {
+			font-size: rem-calc(50);
+			line-height: 1.4;
+		}
+		@media #{$large-up} {
+			font-size: rem-calc(65);
+		}
+	}
+	h2 {
+		color: $white;
+		font-size: rem-calc(16);
+		font-weight: normal;
+		max-width: 60%;
+		margin: 0 auto;
+		padding-top: 0.5em;
+		@media #{$small} {
+			font-size: rem-calc(18);
+		}
+		@media #{$medium} {
+			font-size: rem-calc(20);
+			padding: 0.5em 3.125em 0;
+		}
+		@media #{$large-up} {
+			font-size: rem-calc(25);
+		}
+	}
+}

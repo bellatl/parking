@@ -1,0 +1,25 @@
+.wp-caption {
+	// Leave right and left margin empty so .alignleft and .alignright
+	// classes can define it
+	margin-top: 3em;
+	margin-bottom: 3em;
+	max-width: 100%;
+
+	img[class*="wp-image-"],
+	.wp-image {
+		@include center-block;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+	margin: 0.8075em 0;
+	font-family: $header-font-family;
+	font-size: rem-calc(14);
+}
+
+figcaption {
+	font-family: $header-font-family;
+	margin: 0.5em 0 1em 0;
+}
+
